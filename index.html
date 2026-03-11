@@ -426,517 +426,488 @@ footer{background:var(--blk);border-top:1px solid rgba(255,255,255,.05);padding:
     </div>
     <div class="map-wrap">
       <div>
-        <svg id="mapSvg" viewBox="0 0 800 920" xmlns="http://www.w3.org/2000/svg">
+        <svg id="mapSvg" viewBox="0 0 1100 800" xmlns="http://www.w3.org/2000/svg">
 
           <!-- Stadium shell -->
-          <rect x="18" y="10" width="764" height="900" rx="170" ry="170" fill="#1C1638" stroke="rgba(248,164,200,0.25)" stroke-width="1.5"/>
+          <rect x="12" y="10" width="1076" height="780" rx="130" ry="130" fill="#1C1638" stroke="rgba(248,164,200,0.25)" stroke-width="1.5"/>
 
           <!-- Gate labels -->
-          <text x="400" y="8" text-anchor="middle" font-size="9" fill="rgba(248,164,200,.55)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".12em" font-weight="600">NORTH END</text>
-          <text x="400" y="916" text-anchor="middle" font-size="9" fill="rgba(248,164,200,.55)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".12em" font-weight="600">SOUTH END</text>
-          <text x="14" y="460" text-anchor="middle" font-size="9" fill="rgba(248,164,200,.5)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".08em" font-weight="600" transform="rotate(-90,14,460)">WEST SIDE</text>
-          <text x="786" y="460" text-anchor="middle" font-size="9" fill="rgba(248,164,200,.5)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".08em" font-weight="600" transform="rotate(90,786,460)">EAST SIDE</text>
+          <text x="550" y="9" text-anchor="middle" font-size="9" fill="rgba(248,164,200,.55)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".12em" font-weight="600">NORTH END</text>
+          <text x="550" y="796" text-anchor="middle" font-size="9" fill="rgba(248,164,200,.55)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".12em" font-weight="600">SOUTH END</text>
+          <text x="8" y="400" text-anchor="middle" font-size="9" fill="rgba(248,164,200,.5)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".08em" font-weight="600" transform="rotate(-90,8,400)">WEST SIDE</text>
+          <text x="1092" y="400" text-anchor="middle" font-size="9" fill="rgba(248,164,200,.5)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".08em" font-weight="600" transform="rotate(90,1092,400)">EAST SIDE</text>
 
           <!-- ===== PITCH ===== -->
-          <rect x="235" y="310" width="330" height="275" rx="4" fill="#2E7D32" stroke="#388E3C" stroke-width="1.5"/>
+          <!-- Pitch base: x=345, y=255, w=410, h=290, center=(550,400) -->
+          <rect x="345" y="255" width="410" height="290" rx="4" fill="#2E7D32" stroke="#388E3C" stroke-width="1.5"/>
           <!-- Pitch outline -->
-          <rect x="243" y="318" width="314" height="259" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width=".8"/>
-          <!-- Halfway line -->
-          <line x1="235" y1="447" x2="565" y2="447" stroke="rgba(255,255,255,.3)" stroke-width=".8"/>
+          <rect x="353" y="263" width="394" height="274" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width=".8"/>
+          <!-- Halfway line (vertical, splitting pitch left-right) -->
+          <line x1="550" y1="255" x2="550" y2="545" stroke="rgba(255,255,255,.3)" stroke-width=".8"/>
           <!-- Center circle -->
-          <circle cx="400" cy="447" r="32" fill="none" stroke="rgba(255,255,255,.3)" stroke-width=".8"/>
-          <circle cx="400" cy="447" r="2" fill="rgba(255,255,255,.55)"/>
-          <!-- North penalty area -->
-          <rect x="335" y="310" width="130" height="44" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".8"/>
-          <!-- North goal area -->
-          <rect x="364" y="310" width="72" height="22" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".7"/>
-          <!-- North penalty spot -->
-          <circle cx="400" cy="338" r="1.5" fill="rgba(255,255,255,.4)"/>
-          <!-- North penalty arc -->
-          <path d="M373 354 Q400 336 427 354" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
-          <!-- South penalty area -->
-          <rect x="335" y="541" width="130" height="44" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".8"/>
-          <!-- South goal area -->
-          <rect x="364" y="563" width="72" height="22" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".7"/>
-          <!-- South penalty spot -->
-          <circle cx="400" cy="557" r="1.5" fill="rgba(255,255,255,.4)"/>
-          <!-- South penalty arc -->
-          <path d="M373 541 Q400 559 427 541" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
+          <circle cx="550" cy="400" r="35" fill="none" stroke="rgba(255,255,255,.3)" stroke-width=".8"/>
+          <circle cx="550" cy="400" r="2" fill="rgba(255,255,255,.55)"/>
+          <!-- West (left) penalty area -->
+          <rect x="345" y="325" width="52" height="150" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".8"/>
+          <!-- West goal area -->
+          <rect x="345" y="358" width="26" height="84" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".7"/>
+          <!-- West penalty spot -->
+          <circle cx="382" cy="400" r="1.5" fill="rgba(255,255,255,.4)"/>
+          <!-- West penalty arc -->
+          <path d="M397 373 Q380 400 397 427" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
+          <!-- East (right) penalty area -->
+          <rect x="703" y="325" width="52" height="150" fill="none" stroke="rgba(255,255,255,.22)" stroke-width=".8"/>
+          <!-- East goal area -->
+          <rect x="729" y="358" width="26" height="84" fill="none" stroke="rgba(255,255,255,.18)" stroke-width=".7"/>
+          <!-- East penalty spot -->
+          <circle cx="718" cy="400" r="1.5" fill="rgba(255,255,255,.4)"/>
+          <!-- East penalty arc -->
+          <path d="M703 373 Q720 400 703 427" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
           <!-- Corner arcs -->
-          <path d="M235 310 Q243 310 243 318" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
-          <path d="M565 310 Q557 310 557 318" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
-          <path d="M235 585 Q243 585 243 577" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
-          <path d="M565 585 Q557 585 557 577" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
+          <path d="M345 255 Q353 255 353 263" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
+          <path d="M755 255 Q747 255 747 263" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
+          <path d="M345 545 Q353 545 353 537" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
+          <path d="M755 545 Q747 545 747 537" fill="none" stroke="rgba(255,255,255,.2)" stroke-width=".8"/>
           <!-- Pitch label -->
-          <text x="400" y="443" text-anchor="middle" font-size="10" fill="rgba(100,200,110,.65)" font-family="Black Han Sans,sans-serif" letter-spacing=".08em">PITCH</text>
-          <text x="400" y="457" text-anchor="middle" font-size="7" fill="rgba(80,170,90,.5)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".08em">INTER MIAMI CF</text>
+          <text x="550" y="396" text-anchor="middle" font-size="10" fill="rgba(100,200,110,.65)" font-family="Black Han Sans,sans-serif" letter-spacing=".08em">PITCH</text>
+          <text x="550" y="410" text-anchor="middle" font-size="7" fill="rgba(80,170,90,.5)" font-family="Plus Jakarta Sans,sans-serif" letter-spacing=".08em">INTER MIAMI CF</text>
 
-          <!-- ===== PLATINUM SUITES — top of north end ===== -->
+          <!-- ===== PLATINUM SUITES — north end top row ===== -->
           <!-- PS26-29 west -->
           <g class="sz" data-s="ps-west" data-z="premium" data-p="650" data-r="5.0" onclick="selSec(this)">
-            <rect x="230" y="22" width="160" height="26" rx="3" fill="#FFD54F" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="310" y="38" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">PS26 · PS27 · PS28 · PS29</text>
+            <rect x="340" y="15" width="200" height="22" rx="3" fill="#FFD54F" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="440" y="30" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">PS26 · PS27 · PS28 · PS29</text>
           </g>
           <!-- PS30-33 east -->
           <g class="sz" data-s="ps-east" data-z="premium" data-p="650" data-r="5.0" onclick="selSec(this)">
-            <rect x="410" y="22" width="160" height="26" rx="3" fill="#FFD54F" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="490" y="38" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">PS30 · PS31 · PS32 · PS33</text>
+            <rect x="560" y="15" width="200" height="22" rx="3" fill="#FFD54F" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="660" y="30" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">PS30 · PS31 · PS32 · PS33</text>
           </g>
 
           <!-- ===== SUPPORTERS — North end ===== -->
+          <!-- 201 upper NW tip -->
+          <g class="sz" data-s="201" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
+            <rect x="155" y="42" width="40" height="34" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="175" y="63" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">201</text>
+          </g>
+          <!-- 239 upper NE tip -->
+          <g class="sz" data-s="239" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
+            <rect x="905" y="42" width="40" height="34" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="925" y="63" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">239</text>
+          </g>
           <!-- Supporters West S1-S12 -->
           <g class="sz" data-s="supporters-w" data-z="supporters" data-p="45" data-r="4.9" onclick="selSec(this)">
-            <rect x="150" y="75" width="240" height="48" rx="4" fill="#8BC34A" opacity=".88" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="270" y="96" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.7)" font-family="Black Han Sans,sans-serif">LA FAMILIA · S1-S12</text>
-            <text x="270" y="110" text-anchor="middle" font-size="6.5" fill="rgba(0,0,0,0.5)" font-family="Plus Jakarta Sans,sans-serif">SAFE STANDING WEST</text>
+            <rect x="200" y="42" width="330" height="38" rx="4" fill="#8BC34A" opacity=".88" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="365" y="58" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.7)" font-family="Black Han Sans,sans-serif">LA FAMILIA · S1-S12</text>
+            <text x="365" y="72" text-anchor="middle" font-size="6.5" fill="rgba(0,0,0,0.5)" font-family="Plus Jakarta Sans,sans-serif">SAFE STANDING WEST</text>
           </g>
           <!-- Supporters East S13-S25 -->
           <g class="sz" data-s="supporters-e" data-z="supporters" data-p="45" data-r="4.9" onclick="selSec(this)">
-            <rect x="410" y="75" width="240" height="48" rx="4" fill="#8BC34A" opacity=".88" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="530" y="96" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.7)" font-family="Black Han Sans,sans-serif">LA FAMILIA · S13-S25</text>
-            <text x="530" y="110" text-anchor="middle" font-size="6.5" fill="rgba(0,0,0,0.5)" font-family="Plus Jakarta Sans,sans-serif">SAFE STANDING EAST</text>
+            <rect x="570" y="42" width="330" height="38" rx="4" fill="#8BC34A" opacity=".88" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="735" y="58" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.7)" font-family="Black Han Sans,sans-serif">LA FAMILIA · S13-S25</text>
+            <text x="735" y="72" text-anchor="middle" font-size="6.5" fill="rgba(0,0,0,0.5)" font-family="Plus Jakarta Sans,sans-serif">SAFE STANDING EAST</text>
           </g>
 
           <!-- ===== LOGES ===== -->
           <g class="sz" data-s="loges" data-z="premium" data-p="320" data-r="4.8" onclick="selSec(this)">
-            <rect x="155" y="132" width="490" height="32" rx="3" fill="#90A4AE" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="400" y="152" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">LOGE BOXES</text>
+            <rect x="210" y="86" width="680" height="25" rx="3" fill="#90A4AE" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="550" y="103" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">LOGE BOXES</text>
           </g>
 
-          <!-- ===== CLUB NORTH — back row (y=175) ===== -->
+          <!-- ===== CLUB NORTH — back row (y=118) ===== -->
           <!-- 101 far west -->
           <g class="sz" data-s="101" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="118" y="175" width="52" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="144" y="198" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">101</text>
+            <rect x="155" y="118" width="48" height="35" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="179" y="139" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">101</text>
           </g>
           <!-- C149 -->
           <g class="sz" data-s="c149" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="178" y="175" width="34" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="195" y="198" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C149</text>
+            <rect x="208" y="118" width="32" height="35" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="224" y="139" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C149</text>
           </g>
           <!-- C148 -->
           <g class="sz" data-s="c148" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="216" y="175" width="52" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="242" y="198" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C148</text>
+            <rect x="245" y="118" width="50" height="35" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="270" y="139" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C148</text>
           </g>
           <!-- C147 -->
           <g class="sz" data-s="c147" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="272" y="175" width="52" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="298" y="198" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C147</text>
+            <rect x="300" y="118" width="50" height="35" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="325" y="139" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C147</text>
           </g>
-          <!-- gap center — C146-C143 in front row below -->
           <!-- C142 -->
           <g class="sz" data-s="c142" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="476" y="175" width="52" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="502" y="198" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C142</text>
+            <rect x="750" y="118" width="50" height="35" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="775" y="139" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C142</text>
           </g>
           <!-- C141 -->
           <g class="sz" data-s="c141" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="532" y="175" width="52" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="558" y="198" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C141</text>
+            <rect x="805" y="118" width="50" height="35" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="830" y="139" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C141</text>
           </g>
           <!-- C140 -->
           <g class="sz" data-s="c140" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="588" y="175" width="34" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="605" y="198" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C140</text>
+            <rect x="860" y="118" width="32" height="35" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="876" y="139" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C140</text>
           </g>
           <!-- 139 far east -->
           <g class="sz" data-s="139" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="630" y="175" width="52" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="198" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">139</text>
+            <rect x="897" y="118" width="48" height="35" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="921" y="139" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">139</text>
           </g>
 
-          <!-- ===== CLUB NORTH — front row (y=220) ===== -->
+          <!-- ===== CLUB NORTH — front row (y=158) ===== -->
           <g class="sz" data-s="c146" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="280" y="220" width="55" height="30" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="307" y="239" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C146</text>
+            <rect x="365" y="158" width="60" height="28" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="395" y="176" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C146</text>
           </g>
           <g class="sz" data-s="c145" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="340" y="220" width="55" height="30" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="367" y="239" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C145</text>
+            <rect x="430" y="158" width="60" height="28" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="460" y="176" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C145</text>
           </g>
           <g class="sz" data-s="c144" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="400" y="220" width="55" height="30" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="427" y="239" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C144</text>
+            <rect x="610" y="158" width="60" height="28" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="640" y="176" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C144</text>
           </g>
           <g class="sz" data-s="c143" data-z="club" data-p="195" data-r="4.7" onclick="selSec(this)">
-            <rect x="460" y="220" width="55" height="30" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="487" y="239" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C143</text>
+            <rect x="675" y="158" width="60" height="28" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="705" y="176" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C143</text>
           </g>
 
-          <!-- ===== FIELD SUITES (y=262) ===== -->
+          <!-- ===== FIELD SUITES (y=192) ===== -->
           <!-- FS West FS1-FS9 -->
           <g class="sz" data-s="fs-west" data-z="premium" data-p="750" data-r="5.0" onclick="selSec(this)">
-            <rect x="240" y="262" width="155" height="18" rx="3" fill="#78909C" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="317" y="274" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">FS1 – FS9</text>
+            <rect x="350" y="192" width="185" height="16" rx="3" fill="#78909C" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="442" y="203" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">FS1 – FS9</text>
           </g>
           <!-- FS East FS10-FS18 -->
           <g class="sz" data-s="fs-east" data-z="premium" data-p="750" data-r="5.0" onclick="selSec(this)">
-            <rect x="405" y="262" width="155" height="18" rx="3" fill="#78909C" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="482" y="274" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">FS10 – FS18</text>
+            <rect x="565" y="192" width="185" height="16" rx="3" fill="#78909C" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="657" y="203" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">FS10 – FS18</text>
           </g>
 
-          <!-- ===== UPPER BOWL NW corner ===== -->
-          <g class="sz" data-s="202" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="62" y="60" width="52" height="42" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="88" y="85" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">202</text>
+          <!-- ===== UPPER BOWL NW corner (rotated) ===== -->
+          <g class="sz" data-s="202" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(-35,72,87)">
+            <rect x="48" y="68" width="48" height="38" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="72" y="91" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">202</text>
           </g>
-          <g class="sz" data-s="203" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="40" y="110" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="67" y="139" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">203</text>
+          <g class="sz" data-s="203" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(-20,54,139)">
+            <rect x="28" y="118" width="52" height="42" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="54" y="143" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">203</text>
           </g>
-          <g class="sz" data-s="204" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="30" y="168" width="55" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="57" y="197" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">204</text>
-          </g>
-
-          <!-- ===== UPPER BOWL NE corner ===== -->
-          <g class="sz" data-s="238" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="686" y="60" width="52" height="42" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="712" y="85" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">238</text>
-          </g>
-          <g class="sz" data-s="237" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="705" y="110" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="732" y="139" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">237</text>
-          </g>
-          <g class="sz" data-s="236" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="713" y="168" width="55" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="740" y="197" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">236</text>
+          <g class="sz" data-s="204" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(-10,46,196)">
+            <rect x="20" y="172" width="52" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="46" y="200" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">204</text>
           </g>
 
-          <!-- ===== UPPER NORTH tips ===== -->
-          <g class="sz" data-s="201" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="120" y="55" width="52" height="40" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="146" y="79" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">201</text>
+          <!-- ===== UPPER BOWL NE corner (rotated) ===== -->
+          <g class="sz" data-s="238" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(35,1028,87)">
+            <rect x="1004" y="68" width="48" height="38" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1028" y="91" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">238</text>
           </g>
-          <g class="sz" data-s="239" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="628" y="55" width="52" height="40" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="654" y="79" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">239</text>
+          <g class="sz" data-s="237" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(20,1046,139)">
+            <rect x="1020" y="118" width="52" height="42" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1046" y="143" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">237</text>
+          </g>
+          <g class="sz" data-s="236" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(10,1054,196)">
+            <rect x="1028" y="172" width="52" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1054" y="200" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">236</text>
           </g>
 
-          <!-- ===== UPPER WEST (205-211) — individual sections ===== -->
+          <!-- ===== UPPER WEST (205-211) ===== -->
           <g class="sz" data-s="205" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="28" y="255" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="55" y="284" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">205</text>
+            <rect x="20" y="235" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="44" y="265" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">205</text>
           </g>
           <g class="sz" data-s="206" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="28" y="307" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="55" y="336" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">206</text>
+            <rect x="20" y="289" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="44" y="319" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">206</text>
           </g>
           <g class="sz" data-s="207" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="28" y="359" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="55" y="388" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">207</text>
+            <rect x="20" y="343" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="44" y="373" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">207</text>
           </g>
           <g class="sz" data-s="208" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="28" y="411" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="55" y="440" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">208</text>
+            <rect x="20" y="397" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="44" y="427" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">208</text>
           </g>
           <g class="sz" data-s="209" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="28" y="463" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="55" y="492" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">209</text>
+            <rect x="20" y="451" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="44" y="481" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">209</text>
           </g>
           <g class="sz" data-s="210" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="28" y="515" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="55" y="544" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">210</text>
+            <rect x="20" y="505" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="44" y="535" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">210</text>
           </g>
           <g class="sz" data-s="211" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="28" y="567" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="55" y="596" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">211</text>
+            <rect x="20" y="559" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="44" y="589" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">211</text>
           </g>
 
           <!-- ===== UPPER EAST (235-229) ===== -->
           <g class="sz" data-s="235" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="717" y="255" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="744" y="284" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">235</text>
+            <rect x="1032" y="235" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1056" y="265" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">235</text>
           </g>
           <g class="sz" data-s="234" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="717" y="307" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="744" y="336" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">234</text>
+            <rect x="1032" y="289" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1056" y="319" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">234</text>
           </g>
           <g class="sz" data-s="233" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="717" y="359" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="744" y="388" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">233</text>
+            <rect x="1032" y="343" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1056" y="373" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">233</text>
           </g>
           <g class="sz" data-s="232" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="717" y="411" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="744" y="440" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">232</text>
+            <rect x="1032" y="397" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1056" y="427" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">232</text>
           </g>
           <g class="sz" data-s="231" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="717" y="463" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="744" y="492" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">231</text>
+            <rect x="1032" y="451" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1056" y="481" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">231</text>
           </g>
           <g class="sz" data-s="230" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="717" y="515" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="744" y="544" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">230</text>
+            <rect x="1032" y="505" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1056" y="535" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">230</text>
           </g>
           <g class="sz" data-s="229" data-z="upper" data-p="36" data-r="3.8" onclick="selSec(this)">
-            <rect x="717" y="567" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="744" y="596" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">229</text>
+            <rect x="1032" y="559" width="48" height="52" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1056" y="589" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">229</text>
           </g>
 
-          <!-- ===== UPPER SW corners ===== -->
-          <g class="sz" data-s="212" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="30" y="625" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="57" y="654" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">212</text>
+          <!-- ===== UPPER SW corners (rotated) ===== -->
+          <g class="sz" data-s="212" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(10,46,642)">
+            <rect x="20" y="618" width="52" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="46" y="646" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">212</text>
           </g>
-          <g class="sz" data-s="213" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="40" y="682" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="67" y="711" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">213</text>
+          <g class="sz" data-s="213" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(20,54,693)">
+            <rect x="28" y="672" width="52" height="42" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="54" y="697" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">213</text>
           </g>
-          <g class="sz" data-s="214" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="55" y="738" width="55" height="45" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="82" y="764" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">214</text>
-          </g>
-
-          <!-- ===== UPPER SE corners ===== -->
-          <g class="sz" data-s="228" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="715" y="635" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="742" y="664" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">228</text>
-          </g>
-          <g class="sz" data-s="227" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="705" y="692" width="55" height="50" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="732" y="721" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">227</text>
-          </g>
-          <g class="sz" data-s="226" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="690" y="748" width="52" height="42" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="716" y="773" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">226</text>
-          </g>
-          <g class="sz" data-s="225" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)">
-            <rect x="655" y="795" width="48" height="38" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="679" y="818" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">225</text>
+          <g class="sz" data-s="214" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(35,72,741)">
+            <rect x="48" y="722" width="48" height="38" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="72" y="745" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">214</text>
           </g>
 
-          <!-- ===== LOWER WEST (103-113) — individual sections ===== -->
-          <!-- Section 103 -->
+          <!-- ===== UPPER SE corners (rotated) ===== -->
+          <g class="sz" data-s="228" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(-10,1054,642)">
+            <rect x="1028" y="618" width="52" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1054" y="646" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">228</text>
+          </g>
+          <g class="sz" data-s="227" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(-20,1046,693)">
+            <rect x="1020" y="672" width="52" height="42" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1046" y="697" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">227</text>
+          </g>
+          <g class="sz" data-s="226" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(-35,1028,743)">
+            <rect x="1004" y="722" width="48" height="42" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="1028" y="747" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">226</text>
+          </g>
+          <g class="sz" data-s="225" data-z="upper" data-p="32" data-r="3.5" onclick="selSec(this)" transform="rotate(-45,997,772)">
+            <rect x="975" y="755" width="45" height="35" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="997" y="776" text-anchor="middle" font-size="8" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">225</text>
+          </g>
+
+          <!-- ===== LOWER WEST (103-113) ===== -->
           <g class="sz" data-s="103" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="110" y="210" width="68" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="144" y="238" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">103</text>
+            <rect x="95" y="200" width="62" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="126" y="228" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">103</text>
           </g>
-          <!-- Section 105 -->
           <g class="sz" data-s="105" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="110" y="262" width="68" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="144" y="290" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">105</text>
+            <rect x="95" y="250" width="62" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="126" y="278" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">105</text>
           </g>
-          <!-- Section 106 -->
           <g class="sz" data-s="106" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="110" y="314" width="68" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="144" y="342" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">106</text>
+            <rect x="95" y="300" width="62" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="126" y="328" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">106</text>
           </g>
-          <!-- Section 107 -->
           <g class="sz" data-s="107" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="110" y="366" width="68" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="144" y="394" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">107</text>
+            <rect x="95" y="350" width="62" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="126" y="378" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">107</text>
           </g>
-          <!-- Section 109 (no 108) -->
           <g class="sz" data-s="109" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="110" y="418" width="68" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="144" y="446" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">109</text>
+            <rect x="95" y="400" width="62" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="126" y="428" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">109</text>
           </g>
-          <!-- Section 110 -->
           <g class="sz" data-s="110" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="110" y="470" width="68" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="144" y="498" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">110</text>
+            <rect x="95" y="450" width="62" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="126" y="478" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">110</text>
           </g>
-          <!-- Section 111 -->
           <g class="sz" data-s="111" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="110" y="522" width="68" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="144" y="550" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">111</text>
+            <rect x="95" y="500" width="62" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="126" y="528" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">111</text>
           </g>
-          <!-- Section 113 -->
           <g class="sz" data-s="113" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="110" y="574" width="68" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="144" y="602" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">113</text>
+            <rect x="95" y="550" width="62" height="48" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="126" y="578" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">113</text>
           </g>
           <!-- West ADA strips (visual only) -->
-          <rect x="182" y="210" width="14" height="48" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="182" y="366" width="14" height="48" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="182" y="418" width="14" height="48" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="182" y="574" width="14" height="48" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="161" y="200" width="12" height="48" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="161" y="350" width="12" height="48" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="161" y="400" width="12" height="48" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="161" y="550" width="12" height="48" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
 
-          <!-- ===== LOWER EAST (137-127) — individual sections ===== -->
-          <!-- Section 137 -->
+          <!-- ===== LOWER EAST (137-127) ===== -->
           <g class="sz" data-s="137" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="622" y="210" width="68" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="236" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">137</text>
+            <rect x="943" y="200" width="62" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="974" y="226" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">137</text>
           </g>
-          <!-- Section 135 -->
           <g class="sz" data-s="135" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="622" y="258" width="68" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="284" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">135</text>
+            <rect x="943" y="246" width="62" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="974" y="272" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">135</text>
           </g>
-          <!-- Section 134 -->
           <g class="sz" data-s="134" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="622" y="306" width="68" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="332" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">134</text>
+            <rect x="943" y="292" width="62" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="974" y="318" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">134</text>
           </g>
-          <!-- Section 133 -->
           <g class="sz" data-s="133" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="622" y="354" width="68" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="380" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">133</text>
+            <rect x="943" y="338" width="62" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="974" y="364" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">133</text>
           </g>
-          <!-- Section 132 -->
           <g class="sz" data-s="132" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="622" y="402" width="68" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="428" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">132</text>
+            <rect x="943" y="384" width="62" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="974" y="410" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">132</text>
           </g>
-          <!-- Section 131 -->
           <g class="sz" data-s="131" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="622" y="450" width="68" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="476" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">131</text>
+            <rect x="943" y="430" width="62" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="974" y="456" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">131</text>
           </g>
-          <!-- Section 130 -->
           <g class="sz" data-s="130" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="622" y="498" width="68" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="524" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">130</text>
+            <rect x="943" y="476" width="62" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="974" y="502" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">130</text>
           </g>
-          <!-- Section 129 -->
           <g class="sz" data-s="129" data-z="lower" data-p="85" data-r="4.4" onclick="selSec(this)">
-            <rect x="622" y="546" width="68" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="572" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">129</text>
+            <rect x="943" y="522" width="62" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="974" y="548" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">129</text>
           </g>
-          <!-- Section 127 -->
           <g class="sz" data-s="127" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="622" y="594" width="68" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="656" y="620" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">127</text>
+            <rect x="943" y="568" width="62" height="44" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="974" y="594" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">127</text>
           </g>
           <!-- East ADA strips (visual only) -->
-          <rect x="604" y="210" width="14" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="604" y="354" width="14" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="604" y="402" width="14" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="604" y="450" width="14" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="604" y="594" width="14" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="927" y="200" width="12" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="927" y="338" width="12" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="927" y="384" width="12" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="927" y="430" width="12" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="927" y="568" width="12" height="44" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
 
-          <!-- ===== EAST FIELD LEVEL (y=592, south pitch edge) ===== -->
+          <!-- ===== EAST FIELD LEVEL (south pitch edge, y=550) ===== -->
           <g class="sz" data-s="east4" data-z="premium" data-p="490" data-r="4.9" onclick="selSec(this)">
-            <rect x="270" y="592" width="48" height="20" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="294" y="606" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">East 4</text>
+            <rect x="390" y="550" width="52" height="18" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="416" y="562" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">East 4</text>
           </g>
           <g class="sz" data-s="east3" data-z="premium" data-p="490" data-r="4.9" onclick="selSec(this)">
-            <rect x="352" y="592" width="48" height="20" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="376" y="606" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">East 3</text>
+            <rect x="480" y="550" width="52" height="18" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="506" y="562" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">East 3</text>
           </g>
           <g class="sz" data-s="east2" data-z="premium" data-p="490" data-r="4.9" onclick="selSec(this)">
-            <rect x="404" y="592" width="48" height="20" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="428" y="606" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">East 2</text>
+            <rect x="568" y="550" width="52" height="18" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="594" y="562" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">East 2</text>
           </g>
           <g class="sz" data-s="east1" data-z="premium" data-p="490" data-r="4.9" onclick="selSec(this)">
-            <rect x="486" y="592" width="48" height="20" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="510" y="606" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">East 1</text>
+            <rect x="658" y="550" width="52" height="18" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="684" y="562" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">East 1</text>
           </g>
 
-          <!-- ===== SOUTH LOWER + CLUB ROW (y=625) ===== -->
-          <!-- 115 -->
+          <!-- ===== SOUTH LOWER + CLUB ROW (y=582) ===== -->
           <g class="sz" data-s="115" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="135" y="625" width="40" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="155" y="648" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">115</text>
+            <rect x="175" y="582" width="40" height="34" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="195" y="603" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">115</text>
           </g>
-          <!-- 116 -->
           <g class="sz" data-s="116" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="179" y="625" width="40" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="199" y="648" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">116</text>
+            <rect x="220" y="582" width="40" height="34" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="240" y="603" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">116</text>
           </g>
-          <!-- 117 -->
           <g class="sz" data-s="117" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="223" y="625" width="34" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="240" y="648" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">117</text>
+            <rect x="265" y="582" width="34" height="34" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="282" y="603" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">117</text>
           </g>
-          <!-- 117A -->
           <g class="sz" data-s="117a" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="261" y="625" width="24" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="273" y="644" text-anchor="middle" font-size="6" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">117A</text>
+            <rect x="303" y="582" width="22" height="34" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="314" y="600" text-anchor="middle" font-size="6" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">117A</text>
           </g>
-          <!-- C118 -->
           <g class="sz" data-s="c118" data-z="club" data-p="185" data-r="4.6" onclick="selSec(this)">
-            <rect x="289" y="625" width="44" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="311" y="648" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C118</text>
+            <rect x="330" y="582" width="44" height="34" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="352" y="603" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C118</text>
           </g>
-          <!-- C119 -->
           <g class="sz" data-s="c119" data-z="club" data-p="185" data-r="4.6" onclick="selSec(this)">
-            <rect x="337" y="625" width="44" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="359" y="648" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C119</text>
+            <rect x="378" y="582" width="44" height="34" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="400" y="603" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C119</text>
           </g>
-          <!-- C120 -->
           <g class="sz" data-s="c120" data-z="club" data-p="185" data-r="4.6" onclick="selSec(this)">
-            <rect x="385" y="625" width="44" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="407" y="648" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C120</text>
+            <rect x="426" y="582" width="44" height="34" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="448" y="603" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C120</text>
           </g>
-          <!-- C121 -->
           <g class="sz" data-s="c121" data-z="club" data-p="185" data-r="4.6" onclick="selSec(this)">
-            <rect x="433" y="625" width="44" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="455" y="648" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C121</text>
+            <rect x="474" y="582" width="44" height="34" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="496" y="603" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C121</text>
           </g>
-          <!-- C122 -->
           <g class="sz" data-s="c122" data-z="club" data-p="185" data-r="4.6" onclick="selSec(this)">
-            <rect x="481" y="625" width="44" height="38" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="503" y="648" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C122</text>
+            <rect x="522" y="582" width="44" height="34" rx="3" fill="#9C7BCC" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="544" y="603" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.85)" font-family="Black Han Sans,sans-serif">C122</text>
           </g>
-          <!-- 123 -->
           <g class="sz" data-s="123" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="529" y="625" width="34" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="546" y="648" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">123</text>
+            <rect x="570" y="582" width="34" height="34" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="587" y="603" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">123</text>
           </g>
-          <!-- 123A -->
           <g class="sz" data-s="123a" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="567" y="625" width="24" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="579" y="644" text-anchor="middle" font-size="6" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">123A</text>
+            <rect x="608" y="582" width="22" height="34" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="619" y="600" text-anchor="middle" font-size="6" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">123A</text>
           </g>
-          <!-- 124 -->
           <g class="sz" data-s="124" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="595" y="625" width="40" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="615" y="648" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">124</text>
+            <rect x="635" y="582" width="40" height="34" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="655" y="603" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">124</text>
           </g>
-          <!-- 125 -->
           <g class="sz" data-s="125" data-z="lower" data-p="68" data-r="4.0" onclick="selSec(this)">
-            <rect x="639" y="625" width="40" height="38" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="659" y="648" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">125</text>
+            <rect x="680" y="582" width="40" height="34" rx="3" fill="#42A5F5" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="700" y="603" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.7)" font-family="Black Han Sans,sans-serif">125</text>
           </g>
           <!-- Club ADA south (visual only) -->
-          <rect x="289" y="668" width="44" height="20" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="337" y="668" width="44" height="20" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="385" y="668" width="44" height="20" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="433" y="668" width="44" height="20" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
-          <rect x="481" y="668" width="44" height="20" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="330" y="620" width="44" height="18" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="378" y="620" width="44" height="18" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="426" y="620" width="44" height="18" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="474" y="620" width="44" height="18" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
+          <rect x="522" y="620" width="44" height="18" rx="2" fill="#80CBC4" opacity=".7" stroke="#0A0A14" stroke-width="0.5"/>
 
-          <!-- ===== UPPER SOUTH (215-224) ===== -->
+          <!-- ===== UPPER SOUTH (215-224, y=700) ===== -->
+          <!-- 10 sections * 50w + 9 * 4 gap = 536. Center=550, start=550-268=282 -->
           <g class="sz" data-s="215" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="120" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="145" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">215</text>
+            <rect x="282" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="307" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">215</text>
           </g>
           <g class="sz" data-s="216" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="174" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="199" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">216</text>
+            <rect x="336" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="361" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">216</text>
           </g>
           <g class="sz" data-s="217" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="228" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="253" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">217</text>
+            <rect x="390" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="415" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">217</text>
           </g>
           <g class="sz" data-s="218" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="282" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="307" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">218</text>
+            <rect x="444" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="469" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">218</text>
           </g>
           <g class="sz" data-s="219" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="336" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="361" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">219</text>
+            <rect x="498" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="523" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">219</text>
           </g>
           <g class="sz" data-s="220" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="390" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="415" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">220</text>
+            <rect x="552" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="577" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">220</text>
           </g>
           <g class="sz" data-s="221" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="444" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="469" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">221</text>
+            <rect x="606" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="631" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">221</text>
           </g>
           <g class="sz" data-s="222" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="498" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="523" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">222</text>
+            <rect x="660" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="685" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">222</text>
           </g>
           <g class="sz" data-s="223" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="552" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="577" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">223</text>
+            <rect x="714" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="739" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">223</text>
           </g>
           <g class="sz" data-s="224" data-z="upper" data-p="28" data-r="3.4" onclick="selSec(this)">
-            <rect x="606" y="838" width="50" height="48" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
-            <text x="631" y="866" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">224</text>
+            <rect x="768" y="700" width="50" height="44" rx="3" fill="#8BC34A" opacity=".85" stroke="#0A0A14" stroke-width="0.8"/>
+            <text x="793" y="726" text-anchor="middle" font-size="7.5" fill="rgba(0,0,0,0.65)" font-family="Black Han Sans,sans-serif">224</text>
           </g>
 
         </svg>
