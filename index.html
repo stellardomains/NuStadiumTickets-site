@@ -289,6 +289,26 @@ h2.sec-title,.sec-title{font-family:'Black Han Sans',sans-serif;font-size:clamp(
 .why-ic{font-size:24px;margin-right:10px}
 .why-t{font-family:'Black Han Sans',sans-serif;font-size:20px;color:var(--wh);margin-bottom:8px;display:flex;align-items:center}
 .why-b{font-size:12px;color:var(--mu);line-height:1.65}
+.guide-section{border-top:1px solid rgba(255,255,255,.05)}
+.guide-intro{font-size:15px;color:var(--di);line-height:1.75;max-width:800px;margin-bottom:44px}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:700px){.guide-grid{grid-template-columns:1fr}}
+.guide-card{background:var(--s2);border:1px solid rgba(255,255,255,.04);border-radius:12px;padding:24px 22px}
+.guide-card-t{font-family:'Black Han Sans',sans-serif;font-size:17px;color:var(--wh);margin-bottom:8px}
+.guide-card-p{font-size:12.5px;color:var(--mu);line-height:1.7}
+.guide-card-price{font-family:'Black Han Sans',sans-serif;font-size:14px;color:var(--gold);margin-top:8px}
+.guide-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:44px}
+@media(max-width:700px){.guide-cols{grid-template-columns:1fr}}
+.guide-col{background:var(--s2);border:1px solid rgba(255,255,255,.04);border-radius:12px;padding:24px 22px}
+.guide-col-ic{font-size:28px;margin-bottom:10px}
+.guide-col-t{font-family:'Black Han Sans',sans-serif;font-size:17px;color:var(--wh);margin-bottom:8px}
+.guide-col-p{font-size:12.5px;color:var(--mu);line-height:1.7}
+.guide-highlight{background:linear-gradient(135deg,rgba(224,84,142,.08),rgba(242,112,156,.04));border:1px solid rgba(242,112,156,.15);border-radius:12px;padding:28px 26px;margin-top:28px}
+.guide-highlight-t{font-family:'Black Han Sans',sans-serif;font-size:20px;color:var(--p3);margin-bottom:10px}
+.guide-highlight-p{font-size:13px;color:var(--di);line-height:1.7}
+.sg-groups{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:28px}
+@media(max-width:700px){.sg-groups{grid-template-columns:repeat(3,1fr)}}
+.sg-badge{text-align:center;padding:10px 6px;border-radius:8px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff}
 #faq{background:var(--blk)}
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:44px}
 @media(max-width:660px){.faq-grid{grid-template-columns:1fr}}
@@ -337,6 +357,7 @@ footer{background:var(--blk);border-top:1px solid rgba(255,255,255,.05);padding:
   <ul class="nav-links">
     <li><a href="#schedule">Schedule</a></li>
     <li><a href="#seats">Seating Chart</a></li>
+    <li><a href="#seating-guide">Guides</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
   <button class="nav-btn" onclick="document.getElementById('schedule').scrollIntoView({behavior:'smooth'})">Buy Tickets</button>
@@ -968,6 +989,129 @@ footer{background:var(--blk);border-top:1px solid rgba(255,255,255,.05);padding:
       <div class="why-c"><div class="why-t"><span class="why-ic">&#128065;</span>View Preview</div><div class="why-b">Simulated sightlines for every zone so you know exactly what you're getting before you buy.</div></div>
       <div class="why-c"><div class="why-t"><span class="why-ic">&#128197;</span>Full Schedule</div><div class="why-b">MLS, Leagues Cup, US Open Cup &#8212; every match at Nu Stadium in one place.</div></div>
       <div class="why-c"><div class="why-t"><span class="why-ic">&#128276;</span>Price Alerts</div><div class="why-b">Set a target price and get notified the moment seats drop into your range.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Seating Guide -->
+<section class="section guide-section" id="seating-guide">
+  <div class="wrap">
+    <div class="sec-over">Seating Guide</div>
+    <h2 class="sec-title">Nu Stadium Seating Guide: Best Sections for Every Budget</h2>
+    <p class="guide-intro">Nu Stadium's 26,700-seat bowl is designed to put every fan close to the pitch. Here's a breakdown of each seating zone so you can find the perfect spot for your budget and game-day experience.</p>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <div class="guide-card-t">&#127941; Upper Bowl (200 Level)</div>
+        <div class="guide-card-p">Sections 201-239 wrap around the entire stadium. Steep rake means clear sightlines even from the top rows. Best value seats in the house — perfect for fans who want atmosphere without the price tag.</div>
+        <div class="guide-card-price">From $57</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-card-t">&#9917; Lower Bowl (100 Level)</div>
+        <div class="guide-card-p">Sections 101-139 put you right on top of the action. West sideline (103-113) and East sideline (127-137) offer the best pitch-level views. Corner sections are great for seeing tactical plays develop.</div>
+        <div class="guide-card-price">From $72</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-card-t">&#127775; Club Level</div>
+        <div class="guide-card-p">Club North (C140-C149) and Club South (C118-C122) offer premium elevated sightlines with exclusive lounge access, in-seat service, and upscale food and drink options. The best of both worlds.</div>
+        <div class="guide-card-price">From $185</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-card-t">&#128293; Supporters Section (La Familia)</div>
+        <div class="guide-card-p">Safe standing sections at the north end — home to The Siege, Vice City 1896, Southern Legion, Naci&oacute;n Rosa y Negro, and IMS.MMXX. The loudest, most electric atmosphere in MLS. Non-stop chanting for 90 minutes.</div>
+        <div class="guide-card-price">From $45</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-card-t">&#128142; Field Suites &amp; Pitchside</div>
+        <div class="guide-card-p">ERGO Next Field Level Suites (FS1-FS18) on the north pitchside and East 1-4 on the south side. Literally feet from the touchline. The closest you can get to the action without being on the roster.</div>
+        <div class="guide-card-price">From $490</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-card-t">&#128081; Platinum &amp; Loge Boxes</div>
+        <div class="guide-card-p">Platinum Suites (PS26-PS33) at the top of the north stand and Loge Boxes between the supporters and club sections. Private suites with dedicated service — ideal for corporate entertaining or special occasions.</div>
+        <div class="guide-card-price">From $350</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Opening Night -->
+<section class="section guide-section" id="opening-night">
+  <div class="wrap">
+    <div class="sec-over">Opening Night</div>
+    <h2 class="sec-title">Nu Stadium Opening Night: Inter Miami vs Austin FC</h2>
+    <p class="guide-intro">April 4, 2026 at 7:30 PM ET — the first-ever match at Nu Stadium. Inter Miami CF christens their brand-new home at Miami Freedom Park against Austin FC. This is the most anticipated MLS event of the year.</p>
+    <div class="guide-highlight">
+      <div class="guide-highlight-t">&#127879; Why Opening Night Matters</div>
+      <div class="guide-highlight-p">This isn't just a soccer match — it's the unveiling of a $1 billion+ stadium and the 131-acre Miami Freedom Park entertainment district. Expect pregame ceremonies, special guests, and a sold-out crowd of 26,700. Tickets started around $167 and are climbing as the date approaches. Early buyers get the best prices and first pick of seats.</div>
+    </div>
+    <div class="guide-cols">
+      <div class="guide-col">
+        <div class="guide-col-ic">&#128197;</div>
+        <div class="guide-col-t">Date &amp; Time</div>
+        <div class="guide-col-p">Friday, April 4, 2026<br>7:30 PM Eastern<br>Gates open 5:30 PM</div>
+      </div>
+      <div class="guide-col">
+        <div class="guide-col-ic">&#127944;</div>
+        <div class="guide-col-t">Matchup</div>
+        <div class="guide-col-p">Inter Miami CF vs Austin FC<br>MLS Regular Season<br>First match at Nu Stadium</div>
+      </div>
+      <div class="guide-col">
+        <div class="guide-col-ic">&#127915;</div>
+        <div class="guide-col-t">What to Expect</div>
+        <div class="guide-col-p">Stadium unveiling ceremony<br>Pregame entertainment<br>Sold-out 26,700 crowd</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Getting There -->
+<section class="section guide-section" id="getting-there">
+  <div class="wrap">
+    <div class="sec-over">Transportation</div>
+    <h2 class="sec-title">How to Get to Nu Stadium: Parking, Transit &amp; Rideshare</h2>
+    <p class="guide-intro">Nu Stadium at Miami Freedom Park is located at 1900 NW 37th Ave in Little Havana, Miami — minutes from Miami International Airport and easily accessible from I-836 and SR-836.</p>
+    <div class="guide-cols">
+      <div class="guide-col">
+        <div class="guide-col-ic">&#128663;</div>
+        <div class="guide-col-t">Driving &amp; Parking</div>
+        <div class="guide-col-p">Miami Freedom Park includes dedicated parking within the 131-acre complex. Additional overflow lots nearby. Expect heavy traffic on NW 37th Ave on match days — arrive at least 90 minutes early for the opener.</div>
+      </div>
+      <div class="guide-col">
+        <div class="guide-col-ic">&#128657;</div>
+        <div class="guide-col-t">Public Transit</div>
+        <div class="guide-col-p">The stadium is near several Metrobus routes along NW 37th Ave and Flagler St. The nearest Metrorail station is a short rideshare away. MLS event shuttles are expected from key transit hubs.</div>
+      </div>
+      <div class="guide-col">
+        <div class="guide-col-ic">&#128241;</div>
+        <div class="guide-col-t">Rideshare &amp; Taxi</div>
+        <div class="guide-col-p">Dedicated Uber/Lyft drop-off and pick-up zones at Miami Freedom Park. Rideshare is the easiest option — surge pricing likely on match days, so schedule your ride in advance.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Supporters Section Guide -->
+<section class="section guide-section" id="supporters-guide">
+  <div class="wrap">
+    <div class="sec-over">Supporters</div>
+    <h2 class="sec-title">La Familia Supporters Section Guide at Nu Stadium</h2>
+    <p class="guide-intro">The north end of Nu Stadium belongs to La Familia — Inter Miami's passionate supporter groups who bring the noise for 90 minutes straight. If you want the most intense game-day atmosphere in MLS, this is where you need to be.</p>
+    <div class="sg-groups">
+      <div class="sg-badge" style="background:var(--p1)">The Siege</div>
+      <div class="sg-badge" style="background:#6B21C8">Vice City 1896</div>
+      <div class="sg-badge" style="background:#2D6A3F">Southern Legion</div>
+      <div class="sg-badge" style="background:#E65100">Naci&oacute;n Rosa y Negro</div>
+      <div class="sg-badge" style="background:#1565C0">IMS.MMXX</div>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <div class="guide-card-t">&#127908; The Atmosphere</div>
+        <div class="guide-card-p">Non-stop singing, drums, flags, tifo displays, and coordinated chants. The supporters section is safe standing — no assigned seats, first come first served. Get there early for the best spots near the front.</div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-card-t">&#127903; What to Know</div>
+        <div class="guide-card-p">Supporters sections are safe standing only. Expect to be on your feet the entire match. Bring your voice, respect the culture, and join the chants. Flags and banners are welcome — check stadium policy for size limits.</div>
+      </div>
     </div>
   </div>
 </section>
