@@ -197,9 +197,6 @@ h1 .dim{color:var(--mu)}
 .stat-v{font-family:'Black Han Sans',sans-serif;font-size:30px;color:var(--wh);letter-spacing:.02em}
 .stat-v small{font-size:17px;color:var(--mu)}
 .stat-l{font-size:10px;color:var(--mu);letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
-.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--mu);font-size:9px;letter-spacing:.12em;text-transform:uppercase;animation:fadeUp 1s .7s ease both}
-.scroll-line{width:1px;height:44px;background:rgba(255,255,255,.08);position:relative;overflow:hidden}
-.scroll-line::after{content:'';position:absolute;top:0;left:0;right:0;height:50%;background:var(--p3);animation:sLine 2s ease-in-out infinite}
 @keyframes sLine{0%{top:-50%}100%{top:100%}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 .section{padding:88px 0}
@@ -372,7 +369,6 @@ footer{background:var(--blk);border-top:1px solid rgba(255,255,255,.05);padding:
       <div><div class="stat-v">#1</div><div class="stat-l">MLS Attendance</div></div>
     </div>
   </div>
-  <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
 </section>
 
 <section class="section" id="schedule" style="padding-top:72px">
