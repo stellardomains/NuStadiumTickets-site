@@ -1117,6 +1117,7 @@ footer{background:var(--blk);border-top:1px solid rgba(255,255,255,.05);padding:
   <div class="wrap">
     <div class="sec-over">Stadium Guide</div>
     <h2 class="sec-title">Nu Stadium FAQ</h2>
+    <div style="text-align:right;margin-bottom:16px"><button id="faqToggle" style="background:none;border:1px solid rgba(255,255,255,.15);color:var(--mu);font-size:13px;padding:6px 14px;border-radius:6px;cursor:pointer;font-family:Inter,sans-serif;transition:all .2s" onmouseover="this.style.borderColor='rgba(255,255,255,.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,.15)'">Expand All +</button></div>
     <div class="faq-grid" id="faqG"></div>
   </div>
 </section>
@@ -1424,6 +1425,12 @@ FAQS.forEach(function(f){
   d.innerHTML='<div class="faq-q"><span>'+f.q+'</span><span class="faq-ic">+</span></div><div class="faq-a">'+f.a+'</div>';
   d.querySelector('.faq-q').addEventListener('click',function(){d.classList.toggle('open')});
   fG.appendChild(d);
+});
+var faqOpen=false;
+document.getElementById('faqToggle').addEventListener('click',function(){
+  faqOpen=!faqOpen;
+  document.querySelectorAll('.faq-item').forEach(function(el){faqOpen?el.classList.add('open'):el.classList.remove('open')});
+  this.textContent=faqOpen?'Collapse All −':'Expand All +';
 });
 
 /* --- Stadium Gallery Carousel --- */
